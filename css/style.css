@@ -5145,15 +5145,18 @@ body {
   .daily__img {
     height: 325px;
   }
+  .daily__slider {
+    width: 100%;
+  }
   .daily__shadow {
-    font-size: 55px;
+    font-size: 60px;
     margin-bottom: -20px;
   }
   .daily .arrow_left {
     right: 50px;
   }
   .daily .btn {
-    width: 100%;
+    width: 99%;
     margin-top: 20px;
   }
   .daily__box {

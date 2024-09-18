@@ -536,8 +536,12 @@
             height: 325px;
         }
 
+        &__slider{
+            width: 100%;
+        }
+
         &__shadow{
-            font-size: 55px;
+            font-size: 60px;
             margin-bottom: -20px;
         }
 
@@ -546,7 +550,7 @@
         }
 
         .btn{
-            width: 100%;
+            width: 99%;
             margin-top: 20px;
         }
 

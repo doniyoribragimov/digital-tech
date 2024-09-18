@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // SWIPER слайдеры
 const dailySlider = new Swiper('.daily__slider', {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     slidesPerView: 1,
     autoHeight: true,
     navigation: {
