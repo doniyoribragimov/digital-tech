@@ -1,0 +1,246 @@
+// VARS
+$text: #2A2A2A;
+$main: #747474;
+$grey: #868686;
+$dark: #393939;
+// EXTENDS
+%hover {
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  @media (any-hover: hover){
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+%color{
+  transition: akk 0.02s;
+  cursor: pointer;
+  @media (any-hover: hover){
+    &:hover{
+      color: $main;
+    }
+  }
+}
+
+%close{
+  img{
+    transition: all 0.05s linear;
+  }
+  @media (any-hover: hover){
+    &:hover{
+      img{
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  
+}
+
+
+@mixin height($height) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  select,
+  .btn {
+    height: $height;
+  }
+}
+
+@mixin padding($paddingY, $paddingX) {
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"] {
+    padding: $paddingY $paddingX;
+  }
+}
+
+@mixin clamp($line) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%white{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(7465%) hue-rotate(210deg) brightness(124%) contrast(117%);
+}
+
+%color{
+  transition: color 0.1s;
+  @media (any-hover: hover){
+      &:hover{
+        color: $main;
+      }
+  }
+}
+
+%line{
+  position: relative;
+  padding-bottom: 2px;
+  color: #fff;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: all 0.1s linear;
+  }
+
+  @media (any-hover: hover){
+    &:hover::before{
+      width: 0;
+    }
+  }
+}
+
+%lineReverse{
+  position: relative;
+  padding-bottom: 2px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    transition: all 0.1s linear;
+  }
+
+  @media (any-hover: hover){
+    &:hover::before{
+      width: 100%;
+    }
+  }
+}
+
+%selectHide {
+  &::selection {
+    background-color: transparent;
+  }
+
+  *::selection {
+    background-color: transparent;
+  }
+}
+
+
+select{
+    padding-left: 16px;
+    width: 100%;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    color: #fff;
+    font-family: "Unbounded";
+    font-weight: 500;
+    text-align: center;
+    background-image: url('../images/select-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 50px center;
+    background-size: 10px;
+    background-color: #2A2A2A;
+    outline: none;
+    padding-right: 40px;
+    &:focus {
+      background-image: url('../images/select-up.svg');
+    }
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  flex-shrink: 0;
+  border: 1px solid $dark;
+  &::after {
+    content: '';
+    height: 100%;
+    border-radius: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    position: absolute;
+    background-color: transparent;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.1s ease-in;
+  }
+
+  &:checked {
+    &::after {
+      background-image: url('../images/black-tick.svg');
+    }
+  }
+}
+
+input[type="radio"] {
+  position: relative;
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  flex-shrink: 0;
+  &::after {
+    content: '';
+    height: 100%;
+    border-radius: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    position: absolute;
+    background-color: $main;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $grey;
+    transition: all 0.1s ease-in;
+  }
+
+  &:checked {
+    &::after {
+      background-color: $main;
+      background-image: url('../images/radio-icon.svg');
+    }
+  }
+}
+
+
+

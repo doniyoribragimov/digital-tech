@@ -1,0 +1,49 @@
+/* inter-400*/
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v18-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2'),
+        url('../fonts/inter-v18-cyrillic_cyrillic-ext_latin_latin-ext-regular.ttf') format('truetype');
+}
+
+/* inter-500*/
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v18-cyrillic_cyrillic-ext_latin_latin-ext-500.woff2') format('woff2'),
+        url('../fonts/inter-v18-cyrillic_cyrillic-ext_latin_latin-ext-500.ttf') format('truetype');
+}
+
+/* unbounded-300*/
+@font-face {
+    font-display: swap;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/unbounded-v7-cyrillic_cyrillic-ext_latin_latin-ext-300.woff2') format('woff2'),
+        url('../fonts/unbounded-v7-cyrillic_cyrillic-ext_latin_latin-ext-300.ttf') format('truetype');
+}
+
+/* unbounded-400*/
+@font-face {
+    font-display: swap;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/unbounded-v7-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2'),
+        url('../fonts/unbounded-v7-cyrillic_cyrillic-ext_latin_latin-ext-regular.ttf') format('truetype');
+}
+
+/* unbounded-500*/
+@font-face {
+    font-display: swap;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/unbounded-v7-cyrillic_cyrillic-ext_latin_latin-ext-500.woff2') format('woff2'),
+        url('../fonts/unbounded-v7-cyrillic_cyrillic-ext_latin_latin-ext-500.ttf') format('truetype');
+}
