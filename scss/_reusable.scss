@@ -165,6 +165,13 @@
     padding-left: 30px;
     font-weight: 500;
     background-color: #f4f4f4;
+    &--nosquare{
+        padding-left: 0;
+        &::after,
+        &::before{
+            display: none;
+        }
+    }
     &::before{
         content: '';
         position: absolute;
@@ -310,6 +317,11 @@
         border: 1px solid $dark;
         background-color: #fff;
         color: $dark;
+    }
+
+    &_dark {
+        background-color: $dark;
+        color: #fff;
     }
 
     &_outline{

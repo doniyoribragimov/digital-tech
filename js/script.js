@@ -117,6 +117,7 @@ function createTab(tabName, contentName, selectName) {
     }
 }
 createTab('.catalog .tabs__item', '.catalog .tabs__content', '.catalog__select');
+createTab('.card__tab', '.card .tabs__content', '.catalog__select');
 
 
 
@@ -241,6 +242,7 @@ const dailySlider = new Swiper('.daily__slider', {
     spaceBetween: 20,
     slidesPerView: 1,
     autoHeight: true,
+    
     navigation: {
         prevEl: ".arrow_left",
         nextEl: ".arrow_right",
@@ -280,6 +282,19 @@ const casesSlider = new Swiper('.cases__slider', {
             updateSliderCounter(this);
         }
     }
+});
+
+const cardSlider = new Swiper('.card__slider', {
+    loop: true,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        prevEl: ".card__arrow--left",
+        nextEl: ".card__arrow--right",
+    },
 });
 
 function updateSliderCounter(swiper) {

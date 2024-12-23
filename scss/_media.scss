@@ -1,7 +1,3 @@
-@media(max-width: 1600px){
-    
-}
-
 @media(max-width: 1400px){
     .spacing{
         padding: 70px 0;
@@ -192,6 +188,12 @@
         }
     }
 
+    .card{
+        &__inner{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
     
 }
 
@@ -209,6 +211,13 @@
         &__inner{
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+        }
+    }
+
+    .variants{
+        &__inner{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 25px;
         }
     }
 
@@ -334,6 +343,12 @@
             font-size: 18px;
         }
     }
+
+    .menus{
+        &__text{
+            width: 100%;
+        }
+    }
     
 }
 
@@ -363,6 +378,8 @@
             margin-top: 10px;
         }
     }
+
+    
 
 
 
@@ -411,6 +428,8 @@
             width: 100px;
         }
     }
+
+    
 
     .breadcrumbs{
         font-size: 14px;
@@ -662,6 +681,16 @@
         }
     }
 
+    .title--nosquare.mb{
+        margin-bottom: 40px;
+    }
+
+    .menus{
+        &__img{
+            height: 30vh;
+        }
+    }
+
     .process{
         &__inner{
             grid-template-columns: 1fr;
@@ -720,6 +749,57 @@
         }
     }
 
+    .variants{
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .breadcrumbs{
+        padding-bottom: 0;
+    }
+
+    .card{
+        &__text{
+            width: 100%;
+        }
+
+        &__tabs{
+            display: none;
+        }
+
+        .btn{
+            width: 100%;
+        }
+
+        &__select{
+            margin-bottom: 30px;
+        }
+
+        &__img{
+            height: 260px;
+        }
+
+        &__price{
+            font-size: 20px;
+        }
+
+        &__naming{
+            font-size: 14px;
+        }
+        
+        &__arrow--left{
+            left: 0;
+        }
+        &__arrow--right{
+            right: 0;
+        }
+
+        &__list{
+            grid-template-columns: 1fr;
+        }
+    }
+
 }
 
 @media(max-width: 480px){
@@ -736,6 +816,12 @@
 
         &__wrapper{
             margin-top: 30px;
+        }
+    }
+
+    .menus{
+        &__img{
+            height: 25vh;
         }
     }
 
