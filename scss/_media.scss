@@ -787,12 +787,16 @@
         &__naming{
             font-size: 14px;
         }
-        
+        &__arrow{
+            height: 30px;
+            width: 30px;
+        }
+
         &__arrow--left{
-            left: 0;
+            left: 10px;
         }
         &__arrow--right{
-            right: 0;
+            right: 10px;
         }
 
         &__list{

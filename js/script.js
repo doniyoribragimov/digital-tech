@@ -284,6 +284,19 @@ const casesSlider = new Swiper('.cases__slider', {
     }
 });
 
+const menusSlider = new Swiper('.menus__slider', {
+    loop: true,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        prevEl: ".card__arrow--left",
+        nextEl: ".card__arrow--right",
+    },
+});
+
 const cardSlider = new Swiper('.card__slider', {
     loop: true,
     slidesPerView: 1,

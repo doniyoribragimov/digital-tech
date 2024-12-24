@@ -5450,11 +5450,15 @@ body {
   .card__naming {
     font-size: 14px;
   }
+  .card__arrow {
+    height: 30px;
+    width: 30px;
+  }
   .card__arrow--left {
-    left: 0;
+    left: 10px;
   }
   .card__arrow--right {
-    right: 0;
+    right: 10px;
   }
   .card__list {
     grid-template-columns: 1fr;
